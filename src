@@ -1,0 +1,26 @@
+CREATE DATABASE TCDs;
+USE TCDs;
+
+CREATE TABLE Ganhos (
+    Ganhos INT,
+    Curso VARCHAR(100),
+    Aluno VARCHAR(100),
+    Estado VARCHAR(100),
+    Valor DECIMAL(10, 2)
+);
+
+INSERT INTO Ganhos (Ganhos, Curso, Aluno, Estado, Valor)
+VALUES
+(1, 'Excel', 'Alann', 'SP', 100),
+(2, 'VBA', 'Wendell', 'SP', 100),
+(3, 'Power_BI', 'Jake', 'SP', 100),
+(4, 'Excel', 'Jennifer', 'SP', 100),
+(5, 'Excel', 'Noah', 'SP', 100),
+(6, 'Excel', 'Johnny', 'SP', 100),
+(7, 'Excel', 'Law', 'SP', 100),
+(8, 'Excel', 'Jotaro', 'SP', 100),
+(9, 'VBA', 'Luffy', 'SC', 100),
+(10, 'Excel', 'Luyse', 'BA', 100);
+
+SELECT * FROM Ganhos
+ORDER BY Aluno;
